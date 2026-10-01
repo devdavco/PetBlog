@@ -85,3 +85,40 @@ body {
     border: 40px 700px;
 }
 
+    nav {
+        position: sticky;
+        top:0;
+        background-color: #87cefa;
+  border-bottom: 1px solid black;
+
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumbs li {
+  padding-left: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: black;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+a {
+ font-size: larger;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
