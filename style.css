@@ -77,3 +77,11 @@ body {
 .blockEntries.reverse {
     flex-direction: row-reverse;
 }
+.piePagina{
+
+    background-color: lightskyblue;
+    color: blue;
+    padding: 40px 700px;
+    border: 40px 700px;
+}
+
