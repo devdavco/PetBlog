@@ -32,13 +32,49 @@
     <img src="img/contacto.jpg" width="400" srcset="">
 
     <p>Nos puedes contactar en cualquiera de nuestras páginas oficiales</p>
-    <form action="">
-        <label for="nombre">Nombre: </label><br>
-        <input type="text" id="nombre"><br>
-        <label for="correo">Correo: </label><br>
-        <input type="email" id="correo"><br>
-        <input type="submit" value="Enviar">
-    </form>
+<form class="needs-validation" novalidate>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" required>
+      <div class="invalid-feedback">Escribe tu nombre.</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+      <div class="invalid-feedback">Escribe un correo válido.</div>
+    </div>
+
+    <div class="col-12">
+      <label for="asunto" class="form-label">Asunto</label>
+      <select class="form-select" id="asunto" name="asunto" required>
+        <option value="" selected disabled>Elige una opción</option>
+        <option>Consulta general</option>
+        <option>Sugerir un tema para el blog</option>
+        <option>Colaboración</option>
+        <option>Otro</option>
+      </select>
+      <div class="invalid-feedback">Elige un asunto.</div>
+    </div>
+
+    <div class="col-12">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+      <div class="invalid-feedback">Escribe tu mensaje.</div>
+    </div>
+
+    <div class="col-12 form-check ms-1">
+      <input type="checkbox" class="form-check-input" id="acepto" required>
+      <label class="form-check-label" for="acepto">Acepto que usen mis datos para responder mi mensaje</label>
+      <div class="invalid-feedback">Debes aceptar para enviar.</div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+    </div>
+  </div>
+</form>
         <footer class="piePagina">
         <h8>PetBlog</h1>
         <h9>Autores</h9>
@@ -54,6 +90,20 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    document.querySelectorAll('.needs-validation').forEach(form => {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+        alert('¡Mensaje enviado! Te responderemos pronto.');
+        form.reset();
+        form.classList.remove('was-validated');
+      });
+    });
+  </script>
 </body>
 </html>
 
