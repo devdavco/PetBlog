@@ -5,24 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <nav class="crumbs">
-        <ol>
-            <li class="crumb"><a href="index.html">Inicio</a></li>
-            <li class="crumb"><a href="about.html">acerca de</a></li>
-            <li class="crumb"><a href="contact.html">contacto</a></li>
-        </ol>
-    </nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/logo-icon.png" alt="" width="40" height="40">
+      <span class="fw-semibold" style="color: #1B8CC4;">Blog</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-lg-auto text-center gap-lg-2">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="about.html">Acerca de</a>
+        <a class="nav-link active fw-semibold" aria-current="page" href="contact.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <h1>Contacto</h1>
     <img src="img/contacto.jpg" width="400" srcset="">
-
-    <p>Nos puedes contactar en cualquiera de nuestras páginas oficiales</p>
+        <p>Nos puedes contactar en cualquiera de nuestras páginas oficiales</p>
     <form action="">
         <label for="nombre">Nombre: </label><br>
         <input type="text" id="nombre"><br>
@@ -40,27 +50,27 @@
                 </div>
 
                 <div class="col">
-                    <p>Explora</p>
-                    <p>Ejercicio y juego</p>
-                    <p>Salud y bienestar</p>
-                    <p>Adopción</p>
+                    <p class="fw-bold" class="text-center" style="color: #F59E0B;">Explora</p>
+                    <p class="text-center">Ejercicio y juego</p>
+                    <p class="text-center">Salud y bienestar</p>
+                    <p class="text-center">Adopción</p>
                 </div>
 
             </div>
             <div class="row">
-                <div class="col">
-                    <h8 class="fw-bold">PetBlog</h1>
-                        <h9>Autores</h9>
+                <div class="col">    
+                    <h8 class="fw-bold" style="color: #F59E0B;">PetBlog</h8>
+                        <h9 class="fw-bold" style="color: #F59E0B;">Autores</h9>
                         <ul>
-                            <li>Juan David Corrales</li>
-                            <li>Elbert Parra</li>
-                            <li>Heilen Parra</li>
-                            <li>Brandon Moreno</li>
+                            <li class="text-start">Juan David Corrales</li>
+                            <li class="text-start">Elbert Parra</li>
+                            <li class="text-start">Heilen Parra</li>
+                            <li class="text-start">Brandon Moreno</li>
                         </ul>
                 </div>
 
                 <div class="col">
-                    <h10>Contacto</h10>
+                    <h10 class="fw-bold" style="color: #F59E0B;">Contacto</h10>
                     <p id="correo">contacto@petblog.com</p>
                     <button id="boton-suscribirse" type="button" class="btn btn-outline-secondary">Suscribirse</button>
                 </div>

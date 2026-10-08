@@ -1,3 +1,13 @@
+:root {
+  --azul-noche: #0F2A43;      /* Títulos y texto */
+  --azul-cielo: #1B8CC4;      /* Subtítulos, enlaces, botones */
+  --azul-niebla: #D6ECF7;     /* Etiquetas y hover */
+  --naranja-galleta: #F59E0B; /* Acento y llamadas a la acción */
+  --gris-nube: #F4F6F8;       /* Fondo de la página */
+  --blanco: #FFFFFF;          /* Tarjetas de los artículos */
+  --gris-pizarra: #5B6B7B;    /* Texto secundario */
+}
+
 
 * {
     margin: 0;
@@ -82,6 +92,7 @@ body {
     background-color: #0F2A43;
     color: #1B8CC4;
 }
+
 
 #autores-lista{
     color:#F4F6F8
