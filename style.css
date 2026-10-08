@@ -79,9 +79,13 @@ body {
 }
 .piePagina{
 
-    background-color: lightskyblue;
+    background-color: #0F2A43;
     color: #1B8CC4;
-    padding: 40px 700px;
+}
+
+#autores-lista{
+    color:#F4F6F8
+    fonts
 }
 
     nav {
